@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class Post < ApplicationRecord
-  validates :title, presence:true
-  validates :content, presence:true
+  validates :title, presence: true
+  validates :content, presence: true
   validates_associated :user
   belongs_to :user
   has_many :comments
